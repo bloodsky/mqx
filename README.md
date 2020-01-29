@@ -6,12 +6,12 @@ Simple message queue written in Go for supporting asynchronous comunication betw
 
 Unpack everything inside your local Go directory under the src folder.
 
-**Broker **
+**Broker *
 
 cd broker
 go run *.go semantic timeout
 
-**Pub/Sub **
+**Pub/Sub *
 
 cd client
 go run *.go pub/sub
