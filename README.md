@@ -20,11 +20,11 @@ go run *.go pub/sub
 ```
 go run *.go ALO 30 
 ```
-- ALO -> AtLeastOnce with 30 milliseconds of timeout
+- ALO means "AtLeastOnce" and in this example with 30 milliseconds of retrasmit timeout
 ```
 go run *.go TOB 50 
 ```
-- TOB -> Timeout based with 50 milliseconds of timeout
+- TOB means "Timeout based" and in this example with 50 milliseconds of visibility timeout
 ```
 go run *.go pub 
 ```
@@ -35,5 +35,5 @@ go run *.go sub
 - Subscriber can "Check" for instantaneous update also manually -> check
 
 
-
+# Test
 
