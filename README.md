@@ -41,7 +41,7 @@ go run *.go sub
 
 "*" => Tested with a sleep to slow down subscriber
 
-First 2 colomun => ALO with 500ms timeout
+First 2 colomun => ALO with 500ms timeout / 
 Last 2 column => ALO with 100ms timeout
 
  319 messages* | 3000 messages | 31743 messages | 49890 messages
