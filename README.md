@@ -2,7 +2,10 @@
 Exercise for "Distributed System" course at University of Tor Vergata.
 Simple message queue written in Go for supporting asynchronous comunication between distributed components.
 
-# Usage (inside src folder)
+# Usage
+
+Unpack everything inside your local Go directory under the src folder.
+
 **Broker **
 
 cd broker
