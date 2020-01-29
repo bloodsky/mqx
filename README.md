@@ -2,6 +2,8 @@
 Exercise for "Distributed System" course at University of Tor Vergata.
 Simple message queue written in Go for supporting asynchronous comunication between distributed components.
 
+## Developed by: [Pavia Roberto](https://github.com/bloodsky)
+
 # Usage
 
 Unpack everything inside your local Go directory under the src folder.
