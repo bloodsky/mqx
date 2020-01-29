@@ -39,7 +39,7 @@ go run *.go sub
 
 # Test
 
-* => Tested with a sleep to slow down subscriber
+"*" => Tested with a sleep to slow down subscriber
 
 First 2 colomun => ALO with 500ms timeout
 Last 2 column => ALO with 100ms timeout 
