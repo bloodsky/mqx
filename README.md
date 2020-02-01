@@ -36,7 +36,7 @@ go run *.go sub
 ```
 - Subscriber can "Check" for instantaneous update also manually -> check
 
-# Test
+# Some general timing
 
 "*" => Tested with a sleep to slow down subscriber
 
