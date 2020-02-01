@@ -40,8 +40,8 @@ go run *.go sub
 
 "*" => Tested with a sleep to slow down subscriber
 
-First 2 colomun => ALO with 500ms timeout / 
-Last 2 column => ALO with 100ms timeout
+First 2 colomun => ALO/TOB with 500ms timeout / 
+Last 2 column => ALO/TOB with 100ms timeout
 
  319 messages* | 3000 messages | 31743 messages | 49890 messages
 ------------ | ------------- | ------------- | -------------
@@ -49,19 +49,3 @@ Delivered in 02:03.02 | Delivered in 00:04.92 | Delivered in 00:18.22 | Delivere
 Delivered in 02:01.09 | Delivered in 00:03.25 | Delivered in 00:14.92 | Delivered in 00:51.72
 Delivered in 02:00.47 | Delivered in 00:03.72 | Delivered in 00:15.48 | Delivered in 00:47.22
 --------------------------------------------------------------------------------------------------------
-
-First 2 colomun => TOB with 500ms timeout / 
-Last 2 column => TOB with 100ms timeout
-
- 319 messages* | 3000 messages | 31743 messages | 49890 messages
------------- | ------------- | ------------- | -------------
-Delivered in 02:03.02 | Delivered in 00:04.92 | Delivered in 00:18.22 | Delivered in 00:48.01
-Delivered in 02:01.09 | Delivered in 00:03.25 | Delivered in 00:14.92 | Delivered in 00:51.72
-Delivered in 02:00.47 | Delivered in 00:03.72 | Delivered in 00:15.48 | Delivered in 00:47.22
-
-
-# Current bugs
-
-- There are some problems with logging information server side. Multiple write in the log are in a state of overhanging.
-- In some particular cases, subscriber need to check for message in queue after a "long" run
-- 
