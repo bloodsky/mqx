@@ -1,0 +1,50 @@
+syntax = "proto3";
+
+package addservice;
+
+service AddService {
+    rpc Pub (TopicMessage) returns (QueuedMessage);
+    rpc Sub (TopicSubscription) returns (SubscriberDeliveredMessage);
+    rpc List (ListQueuedMessage) returns (ReceivedQueuedMessageList);
+    rpc Serve (ReadyMessage) returns (Message);
+}
+
+message ReadyMessage {
+    int32 ready = 1;
+}
+
+message Message {
+    string text = 1;
+}
+
+message ListQueuedMessage {
+    string text = 1;
+}
+
+message ReceivedQueuedMessageList {
+    map<string,bool> list = 1;
+}
+
+// Publisher --> Broker
+message TopicMessage {
+    string SentOn = 1;
+    string text = 2;
+}
+
+// Acking function: Broker --> Publisher
+message QueuedMessage {
+    string SentOn = 1;
+    bool ack = 2;
+}
+
+// Subscriber --> Broker
+message TopicSubscription {
+    string name = 2;
+    string topic = 1;
+}
+
+// Broker --> Subscriber
+message SubscriberDeliveredMessage {
+    string text = 1;
+    bool ack = 2;
+}
